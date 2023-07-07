@@ -14,6 +14,7 @@
 		8968F20529A8D0F80023C467 /* ImageGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8968F20429A8D0F80023C467 /* ImageGeneratorTests.swift */; };
 		8968F20F29A8D0F80023C467 /* ImageGeneratorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8968F20E29A8D0F80023C467 /* ImageGeneratorUITests.swift */; };
 		8968F21129A8D0F80023C467 /* ImageGeneratorUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8968F21029A8D0F80023C467 /* ImageGeneratorUITestsLaunchTests.swift */; };
+		8968F21F29A936760023C467 /* OpenAIKit in Frameworks */ = {isa = PBXBuildFile; productRef = 8968F21E29A936760023C467 /* OpenAIKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8968F21F29A936760023C467 /* OpenAIKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = ImageGenerator;
+			packageProductDependencies = (
+				8968F21E29A936760023C467 /* OpenAIKit */,
+			);
 			productName = ImageGenerator;
 			productReference = 8968F1F029A8D0F40023C467 /* ImageGenerator.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = 8968F1E729A8D0F30023C467;
+			packageReferences = (
+				8968F21D29A936760023C467 /* XCRemoteSwiftPackageReference "OpenAIKit" */,
+			);
 			productRefGroup = 8968F1F129A8D0F40023C467 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -583,6 +591,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		8968F21D29A936760023C467 /* XCRemoteSwiftPackageReference "OpenAIKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/MarcoDotIO/OpenAIKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		8968F21E29A936760023C467 /* OpenAIKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 8968F21D29A936760023C467 /* XCRemoteSwiftPackageReference "OpenAIKit" */;
+			productName = OpenAIKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 8968F1E829A8D0F30023C467 /* Project object */;
 }
